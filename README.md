@@ -5,9 +5,10 @@ and then started tweaking it for performance ; mostly as an experiment to see ho
 
 ![screenshot](https://raw.github.com/toby1984/nbody/master/screenshot.png)
 
-Changes done the original code (in no particular order):
+Changes done to the original code (in no particular order):
 
 - restructured code/adopted Java naming conventions
+- turned magic values into constants
 - reduced number of object allocations
 - turned "Body" class inside out to be more cache friendly
 - Calculating forces is now done in parallel (main bottleneck still seems to be the BH tree creation which is hard to parallelize without losing all the performance gains to locking)
