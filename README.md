@@ -12,3 +12,17 @@ Changes done the original code (in no particular order):
 - replaced some code that used Math.sqrt() to use the squared value instead
 - made sure animation runs at ~60fps (will ofc be slower if your CPU can't keep up)
 
+# Requirements
+
+JDK >= 1.8
+
+# Building
+
+    mvn clean package
+
+This will create a self-executable target/nbody.jar 
+
+# Running
+
+    java -jar tar/nbody.jar [--benchmark] [--bodies <count>] [thread count]
+

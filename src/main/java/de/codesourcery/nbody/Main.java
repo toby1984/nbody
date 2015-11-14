@@ -153,6 +153,7 @@ public class Main
     {
         this.threadCount = threadCount;
         this.numBodies = bodyCount;
+        bodyCountInput.setText( Integer.toString( bodyCount ) );
         
         bodies = new Bodies( bodyCount );
         bodiesToProcess = new int[ bodyCount ];
